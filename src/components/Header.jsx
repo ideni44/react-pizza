@@ -1,8 +1,12 @@
-import logo from './assets/img/pizza-logo.svg'
+import logo from '../assets/img/pizza-logo.svg'
+import Button from './Button'
 
 function Header(){
+  const onClick = () =>{
+    alert(true)
+  }
     return(
-        <div className="header">
+         <div className="header">
             <div className="container">
               <div className="header__logo">
                 <img width="38" src={logo} alt="Pizza logo" />
@@ -12,7 +16,7 @@ function Header(){
                 </div>
               </div>
               <div className="header__cart">
-                <a href="/cart.html" className="button button--cart">
+                <Button className="button--cart" onClick={onClick}>
                   <span>520 ₽</span>
                   <div className="button__delimiter"></div>
                   <svg
@@ -41,7 +45,7 @@ function Header(){
                       strokeLinejoin="round"/>
                   </svg>
                   <span>3</span>
-                </a>
+                </Button>
               </div>
             </div>
         </div>
