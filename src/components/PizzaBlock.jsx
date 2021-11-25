@@ -90,8 +90,8 @@ PizzaBlock.propTypes = {
     rating:PropTypes.number.isRequired,
 }
 
-PizzaBlock.defaultProps = {
-    types: []
-}
+// PizzaBlock.defaultProps = {
+//     types: []
+// }
 
 export default PizzaBlock;
