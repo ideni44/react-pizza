@@ -5,9 +5,4 @@ const setPizzas = (items) => {
     }                    
 }
 
-const setCategory = (index) => {
-    return {
-        type:'SET_CATEGORY',
-        payload:index,
-    }                    
-}
+export default setPizzas

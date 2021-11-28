@@ -3,8 +3,8 @@ import pizzasReducer from '../reducers/pizzas'
 import {combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-    filtersReducer,
-    pizzasReducer
+    filters:filtersReducer,
+    pizzas:pizzasReducer
 })
 
 export default rootReducer
